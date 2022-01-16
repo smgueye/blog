@@ -1,0 +1,6 @@
+<h1>New post</h1>
+  <form action="/blog/create" method="POST">
+    {{ csrf_field }}
+    {% include 'posts/form.html' %}
+    <button type="submit">Save</button>
+  </form>
